@@ -1,0 +1,19 @@
+language: java
+
+matrix:
+  include:
+  - os: linux
+  - os: osx
+    osx_image: xcode9.1
+
+cache:
+  directories:
+  - "$HOME/.m2"
+
+script:
+- "./build.sh"
+
+env:
+  global:
+  - secure: e7dMBM3Pwl3XJCaC3zS2HFkmHiw5GT/QWB1/o/jK9skibIlnUD3tqfIxW5kWsG8FM/i25DrdnzEf/RLMfDOlSD1BuABGQMfX2Y/mtPqFEAOgTUI4Cy/e3maz/GnMT2YR0UriLi5O2ew6bWvriWp8NQlbVJbV5RI0G3B4diPMSDlcKCjiv9gz3QquoiDffdO45DsAKUzokxAXH+gceMNvG/RM8PAIWQjqrPdyb1jf5ft6pLmAdE22Z6mH/Qv+3IZqQLbKKUpEyNh2mkjxPd/ZgAypfI8fmUvmFjBQw4kQI5+oMRrexfH1YMsDjZyqN+1Dz71WxMsDzuGtt63fVGBmOlpE9QP4E75ofAXv6QQSMUmhmAC+jpIeQYvehbmBBLDyosFw1Rc3GInv4yXQpzIZMz5kQVJ+4vagF7IXiSKSUQ+zKQz+yIpFbL8HHUSNq63AY3uvV6T4yha2Lj9JDHsieJ2vOvgrx/4wytuGCiyXQicr6TEmW/QrVTo5xxOmxUVvOHxEzoiPgzzkWz6/iIVQ8PpQxtRoNyKhUtCph6+zUulsmgpNh5y6YVmtyeA6N2pUmB0DX5EZjiCQGUL6AWmYIj126KWjCbyvNiGBNTSkue1Ua9KGTjMzK9ndA4hx3LhR91arKINy+HEa3BDiXYmIZSnvybgA57JAENXt4/BTHtQ=
+  - secure: lSTSmYhvI6PYowmyEldRkozrvwVUQrRLjZ9eHfvI5UeWy2zmcTh8grSWIzMYnc6CPOSaqnsjgMw7V/emTdtNr0185iG+8t5oelzzsg+u+6UQXez2cvWPxGpeyHGX3AESUmCi+TQ5qM6VU3JL+fU1eJ0s7Dly1DXBWMCFBqdaEji949AFF9eFtrorWKvOBPmFjE5JbzSyZZTlqxY04shGeqHAXJ5gA44MAUuDigC67pjFAj11Y9uUtmZSwVJvArJUCPOB9u95QIMJL2KGqGRJmhLTLDB8xa8TBoAEdcs1jaxfTAoo7DYZTg/0s4SvVegJPbapiLxN3ObX6X7KNW4oJEj+NWnwC8+blECXH4iw+HkBv7jJ2FJg+brwCh/KhDeOjVUt6UYtRIYIHkDRmmKBAG4oVFt6f4jQkz0v+9w1QxPUGNtDvkpwpXVPr4wBn07Bfc/AVe1W1A3yhEh3Bt0V7S8js5AG6Aos5E7NRXMe1WiDs/q4P9hE5f2o7fL56AHrwgvGMUuQE6ARH0aLbH82NhiBdj5VCQygOIkiF2jrAcPrES5XBmFtPmGcOdPxr73yMgq/HqrKJNtPdvGzjBDz9F+Z6i4X91oly5d/8m7e9QbEPubnLX2ikdbkJsRyEQFMD5QnF/kZUzgBUTj+ArU/AQeYXcJs3Yv/LRpxiVgHke8=
