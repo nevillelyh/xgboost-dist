@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>me.lyh</groupId>
     <artifactId>xgboost4j</artifactId>
-    <version>0.7</version>
+    <version>0.71</version>
     <packaging>jar</packaging>
 
     <properties>
